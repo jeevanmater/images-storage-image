@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/image_storage_database
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+    default-auto-commit: false
+  jpa:
+    hibernate:
+      ddl-auto: update # Options: validate | update | create | create-drop
+    show-sql: true
+
+
+server:
+  port: 9090
