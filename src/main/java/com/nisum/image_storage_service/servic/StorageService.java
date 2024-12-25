@@ -18,6 +18,7 @@ public class StorageService {
 
     @Transactional
     public String uploadImage(MultipartFile file) throws IOException {
+        System.out.println("This is line....!");
         ImageData imageData = storageRepository.save(ImageData.builder()
                 .name(file.getOriginalFilename())
                 .type(file.getContentType())
